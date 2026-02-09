@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Rajdhani', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Dark Mode Scrollbars */
+::-webkit-scrollbar {
+  width: 12px;
+
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 255, 255, 0.3);
+  /* Cyan tint */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 255, 255, 0.6);
+}
+
+/* Force scrollbar  */
+body {
+  overflow-y: scroll !important;
+  overflow-x: hidden !important;
+  /* Prevent horizontal  */
+}
+
+/* main container is scrollable */
+#root {
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  /* Prevent horizontal */
+}
+
+/* scrolling */
+html {
+  scroll-behavior: smooth;
+}
