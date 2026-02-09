@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { OrbitControls, Stars } from '@react-three/drei'
 import Earth from './Earth'
@@ -185,7 +185,7 @@ function ComingSoonView({ view }) {
 
 function App() {
     return (
-        <BrowserRouter basename='/AstraSim'>
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/tracking" element={<TrackingView />} />
@@ -193,7 +193,7 @@ function App() {
                 <Route path="/asteroids" element={<AsteroidWatch />} />
                 <Route path="/launch" element={<LaunchCenter />} />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
