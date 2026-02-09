@@ -13,8 +13,8 @@ function Earth() {
 
     // textures
     const [dayMap, cloudsMap] = useTexture([
-        '/AstraSim/textures/8k_earth_daymap.jpg',
-        '/AstraSim/textures/8k_earth_clouds.jpg'
+        `${import.meta.env.BASE_URL}textures/8k_earth_daymap.jpg`,
+        `${import.meta.env.BASE_URL}textures/8k_earth_clouds.jpg`
     ])
 
     //Calculate realtime Earth rotation 

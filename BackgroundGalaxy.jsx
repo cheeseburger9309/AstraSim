@@ -6,7 +6,7 @@ function BackgroundGalaxy() {
     // Load the Milky Way skybox texture
     const milkyWayTexture = useLoader(
         TextureLoader,
-        '/AstraSim/textures/8k_stars_milky_way.jpg'
+        `${import.meta.env.BASE_URL}textures/8k_stars_milky_way.jpg`
     )
 
     return (
