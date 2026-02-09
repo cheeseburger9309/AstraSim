@@ -185,7 +185,7 @@ function ComingSoonView({ view }) {
 
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename='/AstraSim'>
             <Routes>
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/tracking" element={<TrackingView />} />
