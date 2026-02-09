@@ -32,7 +32,7 @@ function Earth() {
 
 
         // At 12:00 UTC, Prime Meridian should face the sun
-        const gha = -(fractionalHour / 24) * Math.PI * 2 + ROTATION_OFFSET
+        const gha = (fractionalHour / 24) * Math.PI * 2 + ROTATION_OFFSET
 
         return gha
     }

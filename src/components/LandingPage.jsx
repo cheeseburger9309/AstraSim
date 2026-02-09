@@ -15,6 +15,22 @@ function Earth() {
     `${import.meta.env.BASE_URL}textures/8k_earth_clouds.jpg`,
   ]);
 
+  // 1. Calculate correct rotation on load
+  useEffect(() => {
+    if (earthRef.current) {
+        const now = new Date()
+        const hours = now.getUTCHours()
+        const minutes = now.getUTCMinutes()
+        // Match the formula from Earth.jsx
+        const fractionalHour = hours + minutes / 60
+        // Correct rotation
+        const rotation = (fractionalHour / 24) * Math.PI * 2 + Math.PI
+        
+        earthRef.current.rotation.y = rotation
+        if (cloudsRef.current) cloudsRef.current.rotation.y = rotation
+    }
+  }, []) // Run once on mount
+
   // auto-rotate
   useFrame(() => {
     if (earthRef.current) {
