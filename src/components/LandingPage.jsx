@@ -11,8 +11,8 @@ function Earth() {
   const cloudsRef = useRef();
 
   const [dayMap, cloudsMap] = useTexture([
-    "/textures/8k_earth_daymap.jpg",
-    "/textures/8k_earth_clouds.jpg",
+    `${import.meta.env.BASE_URL}textures/8k_earth_daymap.jpg`,
+    `${import.meta.env.BASE_URL}textures/8k_earth_clouds.jpg`,
   ]);
 
   // auto-rotate
@@ -49,7 +49,7 @@ function Earth() {
 
 // star bg
 function Starfield() {
-  const texture = useTexture("/textures/8k_stars_milky_way.jpg");
+  const texture = useTexture(`${import.meta.env.BASE_URL}/textures/8k_stars_milky_way.jpg`);
 
   return (
     <mesh>
