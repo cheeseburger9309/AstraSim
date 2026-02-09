@@ -1,13 +1,6 @@
 # 🌌 AstraSim: Orbital Situational Awareness Platform
 
-![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square) ![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react) ![Three.js](https://img.shields.io/badge/Three.js-Fiber-white?style=flat-square&logo=three.js) ![Vite](https://img.shields.io/badge/Vite-5.0-646CFF?style=flat-square&logo=vite)
-
-> **Submission for Student HackPad 2026**  
-> **Theme:** ORBIT (Building tech beyond Earth)
-
 **AstraSim** is an Open-Source Intelligence (OSINT) dashboard designed to aggregate and visualize critical space domain data. It integrates real-time telemetry from multiple aerospace APIs to provide a unified interface for monitoring satellite constellations, Near-Earth Object (NEO) trajectories, and global launch manifests.
-
-![AstraSim Banner](https://img.shields.io/badge/Space-Tracking-blueviolet?style=for-the-badge)
 
 ---
 
@@ -78,7 +71,7 @@
 
 ## 🌐 Live Demo
 
-🔗 **Demo Link:** [https://nebula-ledger.vercel.app](https://nebula-ledger.vercel.app)
+🔗 **Demo Link:** [https://cheeseburger9309.github.io/AstraSim](https://cheeseburger9309.github.io/AstraSim)
 
 ---
 
@@ -131,8 +124,8 @@
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/nebula-ledger.git
-   cd nebula-ledger
+   git clone https://github.com/yourusername/AstraSim.git
+   cd AstraSim
    ```
 
 2. **Install dependencies:**
@@ -212,7 +205,7 @@ The application has **5 main routes:**
 ## 📁 Project Structure
 
 ```
-nebula-ledger/
+AstraSim/
 ├── public/
 │   └── textures/              # High-resolution space textures
 │       ├── 8k_earth_daymap.jpg
@@ -600,16 +593,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - NASA's Eyes on the Solar System
 - SpaceX ISS Docking Simulator
 - Celestia (space simulation software)
-
----
-
-## 📞 Contact
-
-**Project Maintainer:** Aditya Verma
-**Email:** adityaverma9777@gmail.com
-
-**Hackathon Submission:** Student HackPad 2026  
-**Theme:** ORBIT (Building tech beyond Earth)
 
 ---
 
